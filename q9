@@ -1,0 +1,14 @@
+
+
+def special():
+    for a in range(1, 1000):
+        for b in range(1, 1000):
+            if 1000 - a - b == (a*a +b*b) ** 0.5 :
+                return((1000 - a - b) * a * b )
+
+print(special())
+
+
+##a + b + c = 1000
+##c = 1000 - a - b
+##c = (a * a + b * b)**0.5
