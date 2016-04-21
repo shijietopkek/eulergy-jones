@@ -1,0 +1,16 @@
+primes = [2]
+sum = 2
+for j in range(3, 2000000):
+    isPrime = True
+    sqrt = int(j**0.5)+1
+    for prime in primes:
+        if prime>=sqrt:
+            break
+        if j%prime==0:
+            isPrime = False
+            break
+    if isPrime:
+        primes.append(j)
+        sum+=j
+
+print(sum)
