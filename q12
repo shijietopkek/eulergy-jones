@@ -1,0 +1,17 @@
+def no_of_factors(i):
+    num = 1
+    for j in range(2, int(i**0.5) +1):
+        if i % j == 0:
+            num+=1
+    return num * 2
+
+n = 0
+
+
+while True:
+    k =int(n * (n+1) / 2)
+    if no_of_factors(k) > 500:
+        break;
+    n += 1
+print(k)
+
